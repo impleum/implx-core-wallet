@@ -21,7 +21,7 @@ Clone this repository locally:
 git clone https://github.com/impleum/implx-core-wallet.git
 ```
 
-Navigate to the StratisCore.UI folder in a terminal:
+Navigate to the StratisCore.UI folder in a terminal :
 ``` bash
 cd ./implx-core-wallet/StratisCore.UI
 ```
