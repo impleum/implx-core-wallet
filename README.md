@@ -1,13 +1,13 @@
 # IMPLX Core Wallet
 
-This is the repository of the XDS Core Wallet, a full node staking wallet using Electron and Angular at the front-end and .NET Core with C# in the back-end.
+This is the repository of the IMPLX Core Wallet, a full node staking wallet using Electron and Angular at the front-end and .NET Core with C# in the back-end.
 
 # Building and running the XDS Core daemon
 
-The XDS Core daemon is the backend REST service, hosting a XDS node upon which XDS Core depends.  
-The XDS Core daemon is hosted in another repository. All information on building and running the daemon can be found [here](https://github.com/block-core/blockcore-nodes).
+The IMPLX Core daemon is the backend REST service, hosting a IMPLX node upon which IMPLX Core depends.  
+The IMPLX Core daemon is hosted in another repository. All information on building and running the daemon can be found [here](https://github.com/block-core/blockcore-nodes).
 
-# Building and running the XDS Core user interface
+# Building and running the IMPLX Core user interface
 
 ## Install NodeJS
 
@@ -18,7 +18,7 @@ Download and install the latest Long Term Support (LTS) version of NodeJS at: ht
 Clone this repository locally:
 
 ``` bash
-git clone https://github.com/xds-playgrounds/xds-core-wallet.git
+git clone https://github.com/impleum/implx-core-wallet.git
 ```
 
 Navigate to the StratisCore.UI folder in a terminal:
