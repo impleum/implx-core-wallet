@@ -1,4 +1,4 @@
-# XDS Core Wallet
+# IMPLX Core Wallet
 
 This is the repository of the XDS Core Wallet, a full node staking wallet using Electron and Angular at the front-end and .NET Core with C# in the back-end.
 
@@ -23,7 +23,7 @@ git clone https://github.com/xds-playgrounds/xds-core-wallet.git
 
 Navigate to the StratisCore.UI folder in a terminal:
 ``` bash
-cd ./xds-core-wallet/StratisCore.UI
+cd ./implx-core-wallet/StratisCore.UI
 ```
 
 ## Install dependencies with npm:
@@ -38,7 +38,7 @@ npm install
 
 #### Terminal Window 1
 ``` bash
-cd ./xds-core-wallet/blockcore-nodes/XDS/src/XdsD
+cd ./implx-core-wallet/blockcore-nodes/IMPLX/src/Impleum.Node
 dot net run
 ```
 
