@@ -1,0 +1,3 @@
+[submodule "blockcore-nodes"]
+	path = blockcore-nodes
+	url = https://github.com/shtah/blockcore-nodes.git
