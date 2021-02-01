@@ -2,7 +2,7 @@
 
 This is the repository of the IMPLX Core Wallet, a full node staking wallet using Electron and Angular at the front-end and .NET Core with C# in the back-end.
 
-# Building and running the XDS Core daemon
+# Building and running the IMPLX Core daemon
 
 The IMPLX Core daemon is the backend REST service, hosting a IMPLX node upon which IMPLX Core depends.  
 The IMPLX Core daemon is hosted in another repository. All information on building and running the daemon can be found [here](https://github.com/block-core/blockcore-nodes).
