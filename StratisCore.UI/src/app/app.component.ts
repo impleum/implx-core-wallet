@@ -75,13 +75,13 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   private setTitle() {
-    let applicationName = "XDS Core Wallet";
+    let applicationName = "IMPLX Core Wallet";
     let applicationVersion = this.globalService.getApplicationVersion();
     let newTitle = applicationName + " " + applicationVersion;
     this.titleService.setTitle(newTitle);
   }
 
   public openSupport() {
-    this.electronService.shell.openExternal("https://github.com/sonofsatoshi2020/xds.git");
+    this.electronService.shell.openExternal("https://github.com/impleum/blockcore.git");
   }
 }

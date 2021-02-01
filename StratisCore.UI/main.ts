@@ -18,13 +18,13 @@ nodaemon = args.some(val => val === "--nodaemon" || val === "-nodaemon");
 
 let apiPort;
 if (testnet && !sidechain) {
-  apiPort = 48334;
+  apiPort = 28103;
 } else if (!testnet && !sidechain) {
-  apiPort = 48334;
+  apiPort = 18103;
 } else if (sidechain && testnet) {
-  apiPort = 38225;
+  apiPort = 48103;
 } else if (sidechain && !testnet) {
-  apiPort = 38225;
+  apiPort = 48103;
 }
 
 ipcMain.on('get-port', (event, arg) => {
@@ -55,7 +55,7 @@ function createWindow() {
     frame: true,
     minWidth: 1150,
     minHeight: 650,
-    title: "XDS Core Wallet",
+    title: "IMPLX Core Wallet",
     webPreferences: {
       webSecurity: false
     },
@@ -101,13 +101,13 @@ function createWindow() {
 // Some APIs can only be used after this event occurs.
 app.on('ready', () => {
   if (serve) {
-    console.log("Stratis UI was started in development mode. This requires the user to be running the Stratis Full Node Daemon himself.")
+    console.log("ImpleumX UI was started in development mode. This requires the user to be running the ImpleumX Full Node Daemon himself.")
   }
   else {
     if (sidechain && !nodaemon) {
       startDaemon("Stratis.SidechainD");
     } else if (!nodaemon) {
-      startDaemon("blockcore.xdsd")
+      startDaemon("Impleum.Node")
     }
   }
   createTray();
@@ -209,7 +209,7 @@ function startDaemon(daemonName) {
   });
 
   daemonProcess.stdout.on('data', (data) => {
-    writeLog(`XDS: ${data}`);
+    writeLog(`IMPLX: ${data}`);
   });
 }
 
@@ -237,7 +237,7 @@ function createTray() {
       }
     }
   ]);
-  systemTray.setToolTip('XDS Core Wallet');
+  systemTray.setToolTip('IMPLX Core Wallet');
   systemTray.setContextMenu(contextMenu);
   systemTray.on('click', function() {
     if (!mainWindow.isVisible()) {

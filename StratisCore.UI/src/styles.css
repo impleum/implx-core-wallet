@@ -2282,8 +2282,8 @@ fieldset[disabled] a.btn {
 
 .btn-warning {
   color: #111;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #26BEF9;
+  border-color: #26BEF9;
 }
 
 .btn-warning:hover {
@@ -2297,8 +2297,8 @@ fieldset[disabled] a.btn {
 }
 
 .btn-warning.disabled, .btn-warning:disabled {
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #26BEF9;
+  border-color: #26BEF9;
 }
 
 .btn-warning:not([disabled]):not(.disabled):active, .btn-warning:not([disabled]):not(.disabled).active,
@@ -2606,16 +2606,16 @@ fieldset[disabled] a.btn {
 }
 
 .btn-outline-warning {
-  color: #ffc107;
+  color: #26BEF9;
   background-color: transparent;
   background-image: none;
-  border-color: #ffc107;
+  border-color: #26BEF9;
 }
 
 .btn-outline-warning:hover {
   color: #fff;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #26BEF9;
+  border-color: #26BEF9;
 }
 
 .btn-outline-warning:focus, .btn-outline-warning.focus {
@@ -2623,15 +2623,15 @@ fieldset[disabled] a.btn {
 }
 
 .btn-outline-warning.disabled, .btn-outline-warning:disabled {
-  color: #ffc107;
+  color: #26BEF9;
   background-color: transparent;
 }
 
 .btn-outline-warning:not([disabled]):not(.disabled):active, .btn-outline-warning:not([disabled]):not(.disabled).active,
 .show > .btn-outline-warning.dropdown-toggle {
   color: #fff;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #26BEF9;
+  border-color: #26BEF9;
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
@@ -4449,7 +4449,7 @@ tbody.collapse.show {
 
 .badge-warning {
   color: #111;
-  background-color: #ffc107;
+  background-color: #26BEF9;
 }
 
 .badge-warning[href]:focus, .badge-warning[href]:hover {
@@ -5839,7 +5839,7 @@ a.bg-info:focus, a.bg-info:hover {
 }
 
 .bg-warning {
-  background-color: #ffc107 !important;
+  background-color: #26BEF9 !important;
 }
 
 a.bg-warning:focus, a.bg-warning:hover {
@@ -5951,7 +5951,7 @@ a.bg-purple:focus, a.bg-purple:hover {
 }
 
 .border-warning {
-  border-color: #ffc107 !important;
+  border-color: #26BEF9 !important;
 }
 
 .border-danger {
@@ -8352,7 +8352,7 @@ a.text-info:focus, a.text-info:hover {
 }
 
 .text-warning {
-  color: #ffc107 !important;
+  color: #26BEF9 !important;
 }
 
 a.text-warning:focus, a.text-warning:hover {
@@ -8887,7 +8887,7 @@ img {
 
 #GUI .status li.pending i {
   font-size: .9em;
-  color: #ffc107;
+  color: #26BEF9;
 }
 
 #GUI .status li.statusOK i {
@@ -8934,7 +8934,7 @@ img {
 }
 
 .modal .btn-group.fee label.btn-outline-warning {
-  color: #ffc107;
+  color: #26BEF9;
 }
 
 .modal .btn-group.fee label.btn-outline-success {
@@ -10685,7 +10685,7 @@ bs-daterangepicker-container {
 }
 
 #GUI.dark .table .bubble.bg-warning {
-  border-color: #ffc107;
+  border-color: #26BEF9;
   background-color: rgba(255, 193, 7, 0.3) !important;
 }
 
@@ -10740,7 +10740,7 @@ bs-daterangepicker-container {
 
 #GUI.dark .status li.pending i {
   font-size: .9em;
-  color: #ffc107;
+  color: #26BEF9;
 }
 
 #GUI.dark .status li.statusOK i {
@@ -10864,7 +10864,7 @@ html, body {
   height: 45px;
   padding: 0;
   margin: 0;
-  background-image: url("./assets/images/logo.png");
+  background-image: url("./assets/images/impleum-logo-small.png");
 }
 
 .navbar-nav .nav-item .nav-link {

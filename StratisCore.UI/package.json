@@ -1,19 +1,19 @@
 {
-  "name": "XDS-core",
-  "description": "XDS Core Wallet",
+  "name": "IMPLX-core",
+  "description": "IMPLX Core Wallet",
   "version": "1.0.11",
   "author": {
-    "name": "XDS",
-    "email": "cryptohunter@protonmail.com"
+    "name": "IMPLX",
+    "email": "info@rimpleum.com"
   },
   "license": "MIT",
-  "homepage": "https://trustaking.com",
+  "homepage": "https://impleum.com",
   "keywords": [
-    "trustaking.com",
+    "impleum.com",
     "fullnode",
     "ui",
-    "XDS",
-    "XDSplatform",
+    "IMPLX",
+    "ImpleumPlatform",
     "core",
     "bitcoin",
     "angular",

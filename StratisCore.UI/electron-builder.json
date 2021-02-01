@@ -1,6 +1,6 @@
 {
-  "appId": "com.xds.core",
-  "productName": "XDS Core Wallet",
+  "appId": "com.implx.core",
+  "productName": "IMPLX Core Wallet",
   "publish": null,
   "directories": {
     "output": "app-builds"
@@ -32,7 +32,7 @@
     "target": [
       "AppImage"
     ],
-    "synopsis": "XDS Core Wallet.",
+    "synopsis": "IMPLX Core Wallet.",
     "category": "Utility",
     "artifactName": "${productName}-v${version}-${os}-${arch}.${ext}"
   },
