@@ -8,8 +8,8 @@ matrix:
     dist: bionic
     sudo: required
     dotnet: 3.1
-  - os: osx # OSX 10.12
-    osx_image: xcode9
+  - os: osx # OSX 10.15.7
+    osx_image: xcode12.2
     before_install:
     - brew update 
     - curl https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
