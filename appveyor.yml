@@ -51,8 +51,8 @@ install:
       Write-Host "--> git submodule" -foregroundcolor "magenta"
       git submodule update --init --recursive
       
-      Write-Host "--> node 8.16.0" -foregroundcolor "magenta"
-      Install-Product node 8.16.0
+      Write-Host "--> node 14.15.1" -foregroundcolor "magenta"
+      Install-Product node 14.15.1
       
       Write-Host "--> npm config" -foregroundcolor "magenta"
       npm config set unsafe-perm=true
