@@ -99,7 +99,7 @@ build_script:
       dir
       cd app-builds
       # replace the spaces in the name with a dot as CI system have trouble handling spaces in names.
-      Dir *.exe | rename-item -newname {  "$($_.basename)-$($env:win_runtime)($_.extension)"  -replace " ","."  }
+      Dir *.exe | rename-item -newname { $_.name -replace " ","." -replace "win",$env:win_runtime }
       dir      
       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
       Write-Host "Build finished successfully"
