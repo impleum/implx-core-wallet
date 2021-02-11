@@ -102,7 +102,7 @@ build_script:
       Dir *.exe | rename-item -newname {  $_.name  -replace " ","."  }
       dir      
       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
-      echo 'Build finished successfully'
+      Write-Host "Build finished successfully with LastExitCode is $LastExitCode"
     
 # test_script:
 # - ps: |
