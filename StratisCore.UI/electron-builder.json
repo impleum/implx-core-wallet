@@ -30,7 +30,9 @@
   "linux": {
     "icon": "dist/assets/images/",
     "target": [
-      "AppImage"
+      "AppImage",
+      "deb",
+      "tar.gz"
     ],
     "synopsis": "IMPLX Core Wallet.",
     "category": "Utility",
