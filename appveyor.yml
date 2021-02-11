@@ -116,7 +116,7 @@ test_script:
 # pushing all files in build directory recursively
 artifacts:
 - path: StratisCore.UI\app-builds\*.exe
-  name: StratisCore.UI app
+  name: StratisCore.UI.app
   
 #----------------------------------#
 #      deployment configuration    #
