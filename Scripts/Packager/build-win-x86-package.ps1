@@ -44,7 +44,7 @@ Write-Host "*--------------------------------*" -foregroundcolor "magenta"
 if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
     
 Write-Host "running 'dotnet publish'" -foregroundcolor "magenta"
-Set-Location $env:BUILD_FOLDER/blockcore-nodes/XDS/src/XdsD
+Set-Location $env:BUILD_FOLDER/blockcore-nodes/IMPLX/src/ImplxD
 dotnet publish -c $env:configuration -v m -r $env:win_runtime -o $env:BUILD_FOLDER\StratisCore.UI\daemon
 if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
 

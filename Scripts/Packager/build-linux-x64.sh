@@ -4,7 +4,7 @@ configuration=Release
 os_platform=linux
 log_prefix=LINUX-BUILD
 build_directory=$(dirname $(dirname "$PWD"))
-release_directory="/tmp/xds/${log_prefix}"
+release_directory="/tmp/implx/${log_prefix}"
 node_directory=$build_directory/blockcore-nodes/IMPLX/src/Impleum.Node
 
 # exit if error
@@ -38,7 +38,7 @@ cd $node_directory
 #sudo dotnet restore
 sudo dotnet publish -c $configuration -r $os_platform-$arch -v m -o $build_directory/StratisCore.UI/daemon
 
-echo $log_prefix chmoding the xds file
+echo $log_prefix chmoding the implx file
 sudo chmod +x $build_directory/StratisCore.UI/daemon/blockcore*
 
 # node Build
