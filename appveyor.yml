@@ -104,10 +104,10 @@ build_script:
       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
       echo 'Build finished successfully'
     
-test_script:
-- ps: |
-      Write-Host "$env:log_prefix no tests to run" -foregroundcolor "magenta"
-      #if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
+# test_script:
+# - ps: |
+#       Write-Host "$env:log_prefix no tests to run" -foregroundcolor "magenta"
+#       #if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
 
 #---------------------------------#
 #      artifacts configuration    #
@@ -115,8 +115,8 @@ test_script:
 
 # pushing all files in build directory recursively
 artifacts:
-- path: StratisCore.UI\app-builds\*
-  name: StratisCore.UI.app
+- path: StratisCore.UI\app-builds\*.exe
+  name: StratisCore.UI app
 
 #----------------------------------#
 #      deployment configuration    #
