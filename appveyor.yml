@@ -104,10 +104,10 @@ build_script:
       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
       Write-Host "Build finished successfully with LastExitCode is $LastExitCode"
     
-# test_script:
-# - ps: |
-#       Write-Host "$env:log_prefix no tests to run" -foregroundcolor "magenta"
-#       #if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
+test_script:
+- ps: |
+      Write-Host "$env:log_prefix no tests to run" -foregroundcolor "magenta"
+      #if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
 
 #---------------------------------#
 #      artifacts configuration    #
@@ -115,7 +115,7 @@ build_script:
 
 # pushing all files in build directory recursively
 artifacts:
-- path: StratisCore.UI\app-builds\*.exe
+- path: StratisCore.UI\app-builds\IMPLX.Core.Wallet-v1.0.11-setup-win.exe
   name: StratisCore.UI app
 
 #----------------------------------#
