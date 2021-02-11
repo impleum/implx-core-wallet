@@ -102,6 +102,7 @@ build_script:
       Dir *.exe | rename-item -newname {  $_.name  -replace " ","."  }
       dir      
       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
+      echo 'Build finished successfully'
     
 test_script:
 - ps: |
@@ -121,14 +122,14 @@ artifacts:
 #      deployment configuration    #
 #----------------------------------#
 
-deploy:
-- provider: GitHub
-  tag: $(APPVEYOR_REPO_TAG_NAME)
-  auth_token:
-    secure: /ItAP9sbic1GRG2tIaFz+hf8XZmyiccCa6lNb8N9CztTCwCswdaMii9WdZXl6WmV
-  draft: false
-  prerelease: true
-  force_update: true
-  on:
-    branch: master                 # release from master branch only
+# deploy:
+# - provider: GitHub
+#   tag: $(APPVEYOR_REPO_TAG_NAME)
+#   auth_token:
+#     secure: /ItAP9sbic1GRG2tIaFz+hf8XZmyiccCa6lNb8N9CztTCwCswdaMii9WdZXl6WmV
+#   draft: false
+#   prerelease: true
+#   force_update: true
+#   on:
+#     branch: master                 # release from master branch only
     
