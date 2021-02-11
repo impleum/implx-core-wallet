@@ -61,10 +61,6 @@ echo $log_prefix contents of the $TRAVIS_BUILD_DIR/StratisCore.UI folder
 cd $TRAVIS_BUILD_DIR/StratisCore.UI
 ls
 
-echo $log_prefix contents of the $TRAVIS_BUILD_DIR/StratisCore.UI/daemon folder
-cd $TRAVIS_BUILD_DIR/StratisCore.UI/daemon
-ls
-
 echo $log_prefix contents of the app-builds folder
 cd $TRAVIS_BUILD_DIR/StratisCore.UI/app-builds/
 # replace the spaces in the name with a dot as CI system have trouble handling spaces in names.
