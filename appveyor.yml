@@ -17,7 +17,7 @@ branches:
 #    environment configuration    #
 #---------------------------------#
 
-image: Visual Studio 2017
+image: Visual Studio 2019
 clone_folder: c:\projects\implxcorewallet 
 configuration:
   - Release
@@ -61,7 +61,7 @@ install:
       cd $env:APPVEYOR_BUILD_FOLDER/StratisCore.UI
       npm install
       
-      Write-Host "$env:log_prefix FINISHED restoring dotnet and npm packages with $LastExitCode" -foregroundcolor "magenta"
+      Write-Host "$env:log_prefix FINISHED restoring dotnet and npm packages" -foregroundcolor "magenta"
       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode) }
     
 #---------------------------------#
@@ -85,16 +85,16 @@ before_build:
     
 build_script:
 - ps: |
-      Write-Host "$env:log_prefix running 'dotnet publish' with $LastExitCode" -foregroundcolor "magenta"
+      Write-Host "$env:log_prefix running 'dotnet publish'" -foregroundcolor "magenta"
       cd $env:APPVEYOR_BUILD_FOLDER/blockcore-nodes/IMPLX/src/Impleum.Node
       dotnet publish -c $env:configuration -v m -r $env:win_runtime -o $env:APPVEYOR_BUILD_FOLDER\StratisCore.UI\daemon
       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
       
-      Write-Host "$env:log_prefix Building and packaging the ImpleumCoreBE.UI with $LastExitCode" -foregroundcolor "magenta"
+      Write-Host "$env:log_prefix Building and packaging the ImpleumCoreBE.UI" -foregroundcolor "magenta"
       cd $env:APPVEYOR_BUILD_FOLDER/StratisCore.UI
       npm run package:windows --$env:arch
       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }     
-      Write-Host "[$env:configuration][$env:win_runtime] Finished ImpleumCoreBE.UI packaging with $LastExitCode" -foregroundcolor "magenta"
+      Write-Host "[$env:configuration][$env:win_runtime] Finished ImpleumCoreBE.UI packaging" -foregroundcolor "magenta"
       
       dir
       cd app-builds
@@ -102,7 +102,7 @@ build_script:
       Dir *.exe | rename-item -newname {  $_.name  -replace " ","."  }
       dir      
       if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
-      Write-Host "Build finished successfully with $LastExitCode"
+      Write-Host "Build finished successfully"
     
 test_script:
 - ps: |
@@ -122,14 +122,14 @@ artifacts:
 #      deployment configuration    #
 #----------------------------------#
 
-# deploy:
-# - provider: GitHub
-#   tag: $(APPVEYOR_REPO_TAG_NAME)
-#   auth_token:
-#     secure: /ItAP9sbic1GRG2tIaFz+hf8XZmyiccCa6lNb8N9CztTCwCswdaMii9WdZXl6WmV
-#   draft: false
-#   prerelease: true
-#   force_update: true
-#   on:
-#     branch: master                 # release from master branch only
+deploy:
+- provider: GitHub
+  tag: $(APPVEYOR_REPO_TAG_NAME)
+  auth_token:
+    secure: /ItAP9sbic1GRG2tIaFz+hf8XZmyiccCa6lNb8N9CztTCwCswdaMii9WdZXl6WmV
+  draft: false
+  prerelease: true
+  force_update: true
+  on:
+    branch: master                 # release from master branch only
     
